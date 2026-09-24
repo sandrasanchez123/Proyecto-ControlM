@@ -1,0 +1,10 @@
+---
+- name: Prueba basica Control-M con Ansible
+  hosts: localhost
+  connection: local
+  gather_facts: false
+
+  tasks:
+    - name: Ejecutar prueba
+      ansible.builtin.debug:
+        msg: "OK - Control-M ejecuto correctamente el playbook de Ansible"
