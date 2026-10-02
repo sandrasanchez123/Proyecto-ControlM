@@ -9,6 +9,6 @@
       ansible.builtin.debug:
         msg: "OK - Control-M ejecuto correctamente el playbook de Ansible"
         
-   name: Mantener ejecucion durante 3 segundos
-      ansible.builtin.pause:
+     - name: Mantener ejecucion durante 3 segundos
+        ansible.builtin.pause:
         seconds: 3
