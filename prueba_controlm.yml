@@ -9,6 +9,6 @@
       ansible.builtin.pause:
         seconds: 10
 
-     name: Ejecutar siguiente tarea
+     - name: Ejecutar siguiente tarea
       ansible.builtin.debug:
         msg: "OK - Control-M ejecuto correctamente el playbook de Ansible"
