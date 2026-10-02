@@ -1,14 +1,14 @@
 ---
-- name: Prueba basica Control-M con Ansible
+- name: Ejecutar prueba desde Control-M
   hosts: localhost
-  connection: local
   gather_facts: false
 
   tasks:
-    - name: Ejecutar prueba
+
+    - name: Mantener ejecucion durante 3 segundos
+      ansible.builtin.pause:
+        seconds: 3
+
+    - name: Ejecutar siguiente tarea
       ansible.builtin.debug:
         msg: "OK - Control-M ejecuto correctamente el playbook de Ansible"
-        
-     - name: Mantener ejecucion durante 3 segundos
-        ansible.builtin.pause:
-        seconds: 3
